@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    .card.mb-3.shadow
+        img.card-img-top(src=article.img, alt=article.title)
+        .card-body
+            h5.card-title #{article.title}
+            p.card-text #{article.body} 
+            p.card-text
+                small.text-muted #{author}
+            if user
+                if user.id == article.author
+                    a.btn.btn-outline-primary(href='/articles/edit/'+article._id) Edit
+                    a.btn.btn-danger.ml-3.delete-article(href='#', data-id=article._id) Delete
+

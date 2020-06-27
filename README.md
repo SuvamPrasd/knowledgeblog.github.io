@@ -1,0 +1,1 @@
+This is a blog website where an user can add, edit, and delete own article. However, the user must authenticate through sign in and if not then first the user has to sign up.

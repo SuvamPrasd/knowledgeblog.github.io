@@ -1,0 +1,25 @@
+{
+  "name": "nodekb",
+  "version": "1.0.0",
+  "description": "article blog",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "suvam prasad",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.5.0",
+    "mongoose": "^5.9.18",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.0"
+  }
+}

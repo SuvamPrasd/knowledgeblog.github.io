@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1.display-4.animate__fadeInDown.welcome Welcome
+    p.mt-1 "The only way to discover the limits of the possible is to go beyond them into the impossible."
+    img(src="/images/girl.svg")
+    h1 #{title} &#x1F60A;
+    .mt-5
+    .list-group
+        each article, i in articles
+            a.list-group-item.list-group-item-action(href='/articles/'+article._id)
+                .d-flex.w-100.justify-content-between
+                    h5.mb-1 #{article.title}
+                    small 3 days ago
+                p.mb-1=article.body.slice(0,50)
+            
